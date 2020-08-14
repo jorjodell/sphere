@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Sphere</title>
-  </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" style="width: 99%; height: 99%; background: rgba(255, 255, 255, 1)"></canvas>
-    <script src="Build/Sphere.loader.js"></script>
-    <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Sphere.data",
-        frameworkUrl: "Build/Sphere.framework.js",
-        codeUrl: "Build/Sphere.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "MediaWork",
-        productName: "Sphere",
-        productVersion: "0.12",
-      });
-    </script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>MediaWork | Sphere 0.12</title>
+</head>
+
+<body style="text-align: center">
+  <canvas id="unity-canvas" style="width: 99%; height: 99%; background-color: transparent"></canvas>
+  <script src="Build/Sphere.loader.js"></script>
+  <script>
+    createUnityInstance(document.querySelector("#unity-canvas"), {
+      dataUrl: "Build" + "/Sphere.data",
+      frameworkUrl: "Build" + "/Sphere.framework.js",
+      codeUrl: "Build" + "/Sphere.wasm",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "MediaWork",
+      productName: "Sphere",
+      productVersion: "0.12",
+    });
+  </script>
+</body>
+
 </html>
